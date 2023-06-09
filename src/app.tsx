@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDidShow, useDidHide } from '@tarojs/taro'
+import { View } from '@tarojs/components'
 import { ConfigProvider } from '@nutui/nutui-react-taro'
 import { ModelContext, store } from '~/models'
 import ErrorBoundary from '~/components/ErrorBoundary'
@@ -21,7 +22,7 @@ function App(props) {
       <ModelContext.Provider value={store}>
         <ConfigProvider>
           <ErrorBoundary>
-            <div id="root">{props.children}</div>
+            <View id="root">{props.children}</View>
           </ErrorBoundary>
         </ConfigProvider>
       </ModelContext.Provider>

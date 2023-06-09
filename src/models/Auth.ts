@@ -1,7 +1,7 @@
-import { types, Instance, flow, getParent } from 'mobx-state-tree'
+import { types, Instance, flow } from 'mobx-state-tree'
 import Taro from '@tarojs/taro'
 
-const tmpIds = [''];
+const tmpIds = ['']
 
 export const Auth = types
   .model('Auth')
